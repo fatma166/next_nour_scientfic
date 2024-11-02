@@ -1,0 +1,9 @@
+RewriteEngine On
+
+# Redirect HTTPS to HTTP if necessary
+RewriteCond %{SERVER_PORT} 443
+RewriteRule ^index.php(.*)$ http://scientific-thought:8080/$1 [P,L]
+
+# Proxy requests to Next.js
+RewriteRule ^_next/(.*)$ http://scientific-thought:8080/_next/$1 [P,L]
+RewriteRule ^(.*)$ http://scientific-thought:8080/$1 [P,L]

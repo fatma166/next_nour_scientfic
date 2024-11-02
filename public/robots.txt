@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: scientific-thought.com
+
+# Sitemaps
+Sitemap: scientific-thought.com/sitemap.xml
